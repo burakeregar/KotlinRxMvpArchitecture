@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e9e9e9"
+    android:orientation="vertical">
+
+    <com.mancj.materialsearchbar.MaterialSearchBar
+        android:id="@+id/homeSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        app:mt_maxSuggestionsCount="3"
+        app:mt_placeholder="Click to find a cool repo!"
+        app:mt_searchIconDrawable="@drawable/ic_search_black" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/homeRv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/homeSearchView" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/homeShimmer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/homeSearchView"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/row_repos" />
+
+            <include layout="@layout/row_repos" />
+
+            <include layout="@layout/row_repos" />
+
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/homeLogo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        app:srcCompat="@drawable/ic_github"/>
+
+</RelativeLayout>
