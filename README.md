@@ -3,6 +3,8 @@ Clean MVP Architecture with RxJava + Dagger2 + Retrofit2 + Mockito + Fresco + Ea
 
 <img src="https://github.com/burakeregar/KotlinRxMvpArchitecture/blob/master/art/ss1.png" width="266" height="450"><img src="https://github.com/burakeregar/KotlinRxMvpArchitecture/blob/master/art/gif.gif" width="266" height="450"><img src="https://github.com/burakeregar/KotlinRxMvpArchitecture/blob/master/art/ss2.png" width="266" height="450">
 
+The project searches user's input in the Github using Github API and shows related response in the listing page.
+
 MIT License
 
 Copyright (c) 2017 Burak Eregar
