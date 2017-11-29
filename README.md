@@ -1,13 +1,17 @@
 # KotlinRxMvpArchitecture
 Clean MVP Architecture with RxJava + Dagger2 + Retrofit2 + Mockito + Fresco + EasiestGenericRecyclerAdapter using Kotlin. Includes Unit Tests(Kotlin Tests)!
 
+Main purpose of this repo is dealing unit testing problems and find easy ways to handle them.
+
+Please find [the related Medium article here.](https://medium.com/@burakeregar/kotlin-rxjava-dagger2-mvp-clean-architecture-easy-unit-testing-5a756c4f2c93)
+
 Note: If you do not want to use RxJava, [you can check this repo.](https://github.com/burakeregar/KotlinMvpArchitecture)
 
 <img src="https://github.com/burakeregar/KotlinRxMvpArchitecture/blob/master/art/ss1.png" width="266" height="450"><img src="https://github.com/burakeregar/KotlinRxMvpArchitecture/blob/master/art/gif.gif" width="266" height="450"><img src="https://github.com/burakeregar/KotlinRxMvpArchitecture/blob/master/art/ss2.png" width="266" height="450">
 
+
 The project searches user's input in the Github using Github API and shows related response in the listing page.
 
-Main purpose of this repo is dealing unit testing problems and find easy ways to handle them.
 
 
 ### LICENSE
