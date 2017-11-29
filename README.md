@@ -7,8 +7,10 @@ Note: If you do not want to use RxJava, [you can check this repo.](https://githu
 
 The project searches user's input in the Github using Github API and shows related response in the listing page.
 
+Main purpose of this repo is dealing unit testing problems and find easy ways to handle them.
 
-###LICENSE
+
+### LICENSE
 
 MIT License
 
