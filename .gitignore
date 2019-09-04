@@ -1,0 +1,32 @@
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+dist/
+captures/
+
+# Android Studio (InteliJ)
+.idea/
+*.iml
+*.iws
+*.ipr
+/*/out
+/*/build
+/*/*/production
+
+#Gradle
+.gradletasknamecache
+.gradle/
+build/
+
+#OSx
+.DS_Store
