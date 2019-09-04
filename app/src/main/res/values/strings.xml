@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Flights</string>
+    <string name="loading">Loading...</string>
+    <string name="sort_and_filters">SORT &amp; FILTERS</string>
+    <string name="direct">Direct</string>
+    <string name="via">via %s</string>
+</resources>

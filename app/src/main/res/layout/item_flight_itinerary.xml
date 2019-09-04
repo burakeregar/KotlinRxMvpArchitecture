@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="8dp"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="8dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/airlineLogo"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/date"
+                style="@style/FootNoteBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@id/airlineLogo"
+                tools:text="15:35 - 17:00"/>
+
+            <TextView
+                android:id="@+id/destinationAndAirline"
+                style="@style/FootNoteGrey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/airlineLogo"
+                android:layout_marginStart="16dp"
+                android:layout_below="@id/date"
+                tools:text="BUD-LGW, Wizz Air"/>
+
+            <TextView
+                android:id="@+id/stops"
+                style="@style/FootNoteBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                tools:text="Direct"/>
+
+            <TextView
+                android:id="@+id/duration"
+                style="@style/FootNoteGrey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/stops"
+                tools:text="2 hours"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <ImageView
+                android:id="@+id/returnAirlineLogo"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/returnDate"
+                style="@style/FootNoteBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@id/returnAirlineLogo"
+                tools:text="15:35 - 17:00"/>
+
+            <TextView
+                android:id="@+id/returnDestinationAndAirline"
+                style="@style/FootNoteGrey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/returnAirlineLogo"
+                android:layout_marginStart="16dp"
+                android:layout_below="@id/returnDate"
+                tools:text="BUD-LGW, Wizz Air"/>
+
+            <TextView
+                android:id="@+id/returnStops"
+                style="@style/FootNoteBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                tools:text="Direct"/>
+
+            <TextView
+                android:id="@+id/returnDuration"
+                style="@style/FootNoteGrey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/returnStops"
+                tools:text="2 hours"/>
+
+        </RelativeLayout>
+
+        <View
+            style="@style/Seperator"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp"
+            android:layout_marginTop="8dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/sentimentSatisfaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_sentiment_satisfied"/>
+
+            <TextView
+                style="@style/FootNoteBlack"
+                android:id="@+id/ratingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_centerVertical="true"
+                tools:text="10.0"
+                android:layout_toEndOf="@+id/sentimentSatisfaction"/>
+
+            <TextView
+                android:id="@+id/priceText"
+                style="@style/FootNoteBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                tools:text="£35"/>
+
+            <TextView
+                android:id="@+id/viaText"
+                style="@style/FootNoteGrey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/priceText"
+                android:layout_alignParentEnd="true"
+                tools:text="via Wizzair.com"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

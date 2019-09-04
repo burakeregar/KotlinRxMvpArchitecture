@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 29
+    testOptions.unitTests.includeAndroidResources = true
+    defaultConfig {
+        applicationId "com.burakeregar.flights"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField "String", "API_KEY", "\"ss630745725358065467897349852985\""
+        buildConfigField "String", "BASE_API_URL", "\"https://partners.api.skyscanner.net/apiservices/\""
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0-rc01'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0-beta03'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.core:core-ktx:1.2.0-alpha03'
+    implementation 'com.google.android.material:material:1.0.0'
+
+    // Unit Test
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.mockito:mockito-inline:3.0.0'
+    testImplementation "io.mockk:mockk:1.9.3"
+    testImplementation "com.squareup.assertj:assertj-android:1.1.1"
+    // Robolectric
+    testImplementation "org.robolectric:robolectric:4.3"
+
+    // Dependency Injection
+    implementation 'com.google.dagger:dagger:2.21'
+    implementation 'com.google.dagger:dagger-android-support:2.21'
+    kapt 'com.google.dagger:dagger-compiler:2.21'
+    kapt 'com.google.dagger:dagger-android-processor:2.21'
+
+    // RxJava
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.1'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+
+
+    // Networking
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+
+    // Image Loading
+    implementation 'com.squareup.picasso:picasso:2.71828'
+}
