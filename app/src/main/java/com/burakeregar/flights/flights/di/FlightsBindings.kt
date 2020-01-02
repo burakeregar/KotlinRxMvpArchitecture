@@ -9,5 +9,5 @@ import dagger.android.ContributesAndroidInjector
 abstract class FlightsBindings {
     @PerActivity
     @ContributesAndroidInjector(modules = [FlightsModule::class])
-    internal abstract fun contributeJoinClubCardActivityInjector(): FlightsActivity
+    internal abstract fun contributeActivityInjector(): FlightsActivity
 }

@@ -29,7 +29,7 @@ fun FlightsBackendResponse.Leg.map(
     places: Map<Int, FlightsBackendResponse.Place>
 ): FlightItem {
 
-    fun fullDateToHourAndMinutes(date: Date): String {
+    fun fullDateToHourAndMinutes(date: Date?): String {
         return SimpleDateFormat("HH:mm", Locale.getDefault()).format(date)
     }
 
